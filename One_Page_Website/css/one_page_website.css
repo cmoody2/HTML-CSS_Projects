@@ -1,0 +1,6 @@
+header, h1 {
+    font-family: 'DM Serif Text', serif;
+    src: url('../font_family/DMSerifText-Regular.ttf');
+    font-size: 3em;
+    text-align: center;
+}
