@@ -34,7 +34,7 @@ input {
     margin: 9px 0;
     box-sizing: border-box;
     border: 2.5px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 14px;
     text-transform: uppercase;
 }
