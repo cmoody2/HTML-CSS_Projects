@@ -1,0 +1,161 @@
+/*=====================================
+    NAVBAR STYLING
+=======================================*/
+.navbar {
+    overflow: hidden;
+    background-color: darkgreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: .7em .7em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar a:hover {
+    background: grey;
+    color: white;
+}
+
+/*=======================================
+    COLUMNS STYLING
+=========================================*/
+.column {
+    float: left;
+    width: 35%;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 1em;
+}
+
+/*=======================================
+    IMAGE CONTAINER
+=========================================*/
+.container {
+    position: relative;
+    width: 50%;
+    padding: 1em;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: white;
+    color: green;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*=========================================
+    FONT STYLING
+===========================================*/
+h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+footer p:hover {
+    background: white;
+    color: blue;
+}
+
+/*=========================================
+    TABLE STYLING
+===========================================*/
+#users {
+    border-collapse: collapse;
+    width: 75%;
+    margin: 5em;
+    padding: 3em;
+}
+
+#users td, #users th {
+    border: 1.3em solid #ddd;
+    padding: 8px;
+}
+
+#users tr:nth-child() {
+    background-color: #f2f2f2;
+}
+
+#users tr:hover {
+    background-color: #ddd;
+}
+
+#users th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: black;
+    color: green;
+}
+
+video {
+    position: relative;
+    width: auto;
+    z-index: 0;
+}
+
+#overlay_text {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    z-index: 1;
+    transform: translate(50%, 50%);
+    text-align: center;
+}
+
+#toptext {
+    color: white;
+    font-size: 7em;
+}
+
