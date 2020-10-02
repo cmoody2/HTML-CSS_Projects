@@ -44,5 +44,32 @@ input {
 }
 
 #about {
-    background-color: rgba(255, 255, 240, 0.342);
+    background-color: rgba(255, 255, 240, 0.411);
 }
+
+.nav-link {
+    position: relative;
+    background-color: #d3d3d3c2;
+    color: white;
+    padding: 2rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #d3d3d3fb;
+}
+
+.nav-link:hover {
+    transition: transform 1s;
+    transform: scale(1.03);
+    color: white;
+}
+
+.col-3 {
+
+}
+
+.footer {
+
+    background-color: teal;
+}
+
