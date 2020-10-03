@@ -8,14 +8,20 @@ header h1 {
     font-family: 'DM Serif Text', sans-serif;
     src: url('../font_family/DMSerifText-Regular.ttf');
     font-size: 5em;
-    text-align: center;
+}
+
+.logo {
+    padding-left: 39.5%;
+    padding-top: 50px;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     src: url('../font_family/Montserrat-Bold.ttf');
     font-size: 3em;
-    text-align: center;
+    padding-left: 1.8em;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -43,6 +49,32 @@ input {
     padding: 25px 20px;
 }
 
+.home-background {
+padding-left: 2.5em;
+}
+
 #about {
     background-color: rgba(255, 255, 240, 0.342);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-lin {
+    background-color: silver;
+    color: whitesmoke;
+}
+
+.nav-link {
+    background-color: rgb(211, 211, 211);
+    color: whitesmoke;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+}
+
+.col-3 {
+    padding-top: 1.5em;
 }
