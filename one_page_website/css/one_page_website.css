@@ -10,9 +10,30 @@ header h1 {
     font-size: 5em;
 }
 
-.logo {
-    padding-left: 39.5%;
+img {
+    z-index: 1;
+}
+
+.logo1 {
+    padding-left: 69%;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background-color: red;
+}
+
+.logo2 {
+    padding-right: 410.5px;
+    padding-left: 5%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: #00cccc;
+}
+
+.logo3 {
+    padding-left: 69%;
     padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
 }
 
 h1 {
