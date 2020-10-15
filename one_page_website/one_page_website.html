@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Christopher Moody">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 		<title>M. | Studio</title>
+		<script src="./js/one_page_website.js" defer></script>
 		<link rel="shortcut icon" type="image/jpg" href="images/letter_m.png">
 	</head>
 	<body>
@@ -107,126 +107,135 @@
 						<!-- END BRAND CONTAINER 3 -->
 						
 					</div>
-				</div>
+			</div>
 	
 
 			<!-- GALLERY SECTION -->
-			<section>
-				<div id="gallery">
 					<h1>PROJECT GALLERY</h1>
-					<div>
-						
-						<!--IMAGE CONTAINER 1 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/keycult_thumb_1.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"KEYCULT NO.1/60 VARIOUS COLORS"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 2 -->
-						
-						<!--IMAGE CONTAINER 2 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/keycult_thumb_2.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"KEYCULT NO.1/60"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 2-->
-						
-						<!--IMAGE CONTAINER 3 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/keycult_thumb_3.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"KEYCULT NO.2"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 3 -->
-						
-						<!--IMAGE CONTAINER 4 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/keycult_thumb_4.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"KEYCULT NO.2 BOTTOM WEIGHT"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 4 -->
-						
-						<!--IMAGE CONTAINER 5 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/norbauer_thumb_1.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"NORBAUER & Co. HEAVY-6 &ldquo;URBI ET ORBI EDITION&rdquo;"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 5 -->
-						
-						<!--IMAGE CONTAINER 6 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/norbauer_thumb_2.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"NORBAUER & Co. NORBAFORCE MARK II"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 6 -->
-						
-						<!--IMAGE CONTAINER 7 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/rama_thumb_1.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"RAMA U80-A , NORBAUER & Co. NORBAFORCE MARK II , RAMA M60-A "</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 7 -->
-						
-						<!--IMAGE CONTAINER 8 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/rama_thumb_2.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"RAMA U80-A"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 8 -->
-						
-						<!--IMAGE CONTAINER 9 -->
-							<div>
-								<div>
-									<div>
-										<img src="./images/rama_thumb_3.png" alt="IMAGE NOT FOUND!">
-										<h4>CLICK TO ENLARGE</h4>
-										<p>"RAMA WORKS U80-A"</p>
-									</div>
-								</div>
-							</div>
-						<!--END IMAGE CONTAINER 9 -->
-						
+
+					<div class="row">
+						<div class="column">
+							<img src="./images/keycult_thumb_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/keycult_thumb_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/norbauer_thumb_1.png" style="width:100%"onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/norbauer_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/rama_thumb_1.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/rama_thumb_2.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./images/rama_thumb_3.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+						</div>	
 					</div>
-				</div>
-			</section>
+
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 9</div>
+								<img src="./images/keycult_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 9</div>
+								<img src="./images/keycult_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 9</div>
+								<img src="./images/keycult_thumb_3_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 9</div>
+								<img src="./images/keycult_thumb_4_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 9</div>
+								<img src="./images/norbauer_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">6 / 9</div>
+								<img src="./images/norbauer_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7 / 9</div>
+								<img src="./images/rama_thumb_1_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8 / 9</div>
+								<img src="./images/rama_thumb_2_wide.png" style="width: 100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">9 / 9</div>
+								<img src="./images/rama_thumb_3_wide.png" style="width: 100%">
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_1.png" style="width:100%" onclick="currentSlide(1)" alt="Keycult No. 1/60 color variants">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_2.png" style="width:100%" onclick="currentSlide(2)" alt="Keycult No. 1/60 with GMK Coffee">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_3.png" style="width:100%" onclick="currentSlide(3)" alt="Keycult No. 2">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/keycult_thumb_4.png" style="width:100%" onclick="currentSlide(4)" alt="Keycult No. 2 bottom brass weight">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/norbauer_thumb_1.png" style="width:100%" onclick="currentSlide(5)" alt="Norbauer Heavy 6 Grail">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/norbauer_thumb_2.png" style="width:100%" onclick="currentSlide(6)" alt="Norbauer Norbaforce TKL">
+							</div>
+
+							<div class="column">
+								<img class="demo " src="./images/rama_thumb_1.png" style="width:100%" onclick="currentSlide(7)" alt="Rama U80-A, Norbaforce TKL, and Rama M60-A">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/rama_thumb_2.png" style="width:100%" onclick="currentSlide(8)" alt="Rama U80-A">
+							</div>
+
+							<div class="column">
+								<img class="demo" src="./images/rama_thumb_3.png" style="width:100%" onclick="currentSlide(9)" alt="Rama M65-B">
+							</div>
+						</div>
+					</div>
 			<!-- END GALLERY SECTION -->
 
 			<!-- VIDEO SECTION -->
@@ -277,11 +286,6 @@
 		<div>
 			<h3><span>www.mdotstudio.com</span> &nbsp;| ALL RIGHTS RESERVED &nbsp; &copy;2020</h3>
 		</div>
-		
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		
 	</body>
 </html>
