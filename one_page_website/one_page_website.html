@@ -14,7 +14,17 @@
 	</head>
 	<body>
 
-
+		<!--NAVBAR-->
+		<div class="navbar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#brands">Contact</a></li>
+				<li><a href="#gallery">Project Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<!--/NAVBAR-->
 
 		<!-- HEADER -->
 		<div class="container-fluid">
@@ -36,9 +46,9 @@
 				<h1>ABOUT US</h1>
 
 				<!-- ABOUT SECTION PHOTO 1 -->
-				<div class="about_photo_container">
+				<div class="about-photo-container">
 					<div class="about_photo">
-						<img src="./images/office1.png" alt="IMAGE NOT FOUND!">
+						<img class="office" src="./images/office1.png" alt="IMAGE NOT FOUND!">
 					</div>
 				</div>
 				
@@ -258,18 +268,20 @@
 						<p>
 							Please provide us with your basic contact information
 						</p>
-						<div>
-							<form action=" " method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="text" value="Email Address">
-								<input class="rsvp" type="text" value="Phone Number">
+						<button type="button" class="open-button" onclick="openForm()">Open Form</button>
+						<div class="form-popup" id="contactForm">
+							<form action="" method="" class="form-container">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email">
+								<input class="rsvp" type="text" value="" placeholder="Message">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
 								<div>
 									<input type="submit" value="Submit">
 								</div>
+								<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 							</form>
 						</div>
 					</div>
@@ -282,7 +294,6 @@
 		<div>
 			<h3><span>www.mdotstudio.com</span> &nbsp;| ALL RIGHTS RESERVED &nbsp; &copy;2020</h3>
 		</div>
-		
 		
 	</body>
 </html>
