@@ -11,10 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/main.js" defer></script>
     </head>
 
     <!--BODY-->
-    <body class="background">
+    <body>
+        <script>document.body.className += ' fade-out';</script>
 
         <!--NAVBAR-->
         <div class="navbar">
@@ -93,11 +95,13 @@
 
                 <div class="column_1">
                     <h1>Contact</h1>     <!--RIGHT COLUMN-->
-                        <form action="" method="GET">
+                        <form name="contactForm" onsubmit="return validateForm()" action="" method="GET">
                             <label>Name:</label>
-                                <input type="text" placeholder="Please enter your name here">
+                                <input type="text" id="name" name="name" placeholder="Please enter your name here">
                             <label>Email:</label>
                                 <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                            <label>Phone Number:</label>
+                                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Please enter your phone number here">
                             <label>Message:</label>
                                 <input type="text" id="message" name="message" placeholder="Please write your message here">
                                 <input type="submit" value="Submit">
@@ -112,5 +116,10 @@
                 </p>
             </footer>
 
+            <script>
+                $(function() {
+                    $('body').removeClass('fade-out');
+                });
+            </script>
     </body>
 </html>
