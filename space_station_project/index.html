@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 		<body>
             <!-- NAV-->
@@ -30,124 +31,37 @@
             </div>
             <!-- END HOME-->
 
-            <!-- GALLERY-->
-            <section id="gallery">
-                <div class="container">
-                    <h1>GALLERY</h1>
-                    <div class="flex-container">
-
-                        <!-- PHOTO-CONTAINER 1-->
-                        <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_1.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Beautiful cityscape of Area 18 on planet ArcCorp!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 1-->
-
-                           <!-- PHOTO-CONTAINER 2-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_2.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>MISC Razor racing ship staging Hurston Grand Prix</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 2-->
-
-                           <!-- PHOTO-CONTAINER 3-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_3.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Grim Hex, a rustic station nestled in a asteroid</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 3-->
-
-                           <!-- PHOTO-CONTAINER 4-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_4.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Lush flora of planet Hurston </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 4-->
-
-                           <!-- PHOTO-CONTAINER 5-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_5.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Our premier Origin 890J luxury passenger vehicle</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 5-->
-
-                           <!-- PHOTO-CONTAINER 6-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_6.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Passing frieghter in the Stanton system</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 6-->
-
-                           <!-- PHOTO-CONTAINER 7-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_7.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>RSI Constellation, our premier exploration ship</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 7-->
-
-                           <!-- PHOTO-CONTAINER 8-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_8.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Origin 890J amongst the asteroid belt surrounding the moon Yela </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 8-->
-
-                           <!-- PHOTO-CONTAINER 9-->
-                           <div class="photo-container">
-                            <div class="photo">
-                                <img src="./images/thumb/thumbnail_9.png" alt="Display Error!">
-                                <div class="photo-overlay">
-                                    <h3>Click to Enlarge</h3>
-                                    <p>Port Olisar, a popular pitstop for restless travelers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END PHOTO-CONTAINER 9-->
-
+            <div class="container">
+                <div id="slideshow">
+                    <div>
+                        <img src="./images/thumb/thumbnail_1.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_2.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_3.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_4.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_5.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_6.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_7.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_8.png">
+                    </div>
+                    <div>
+                        <img src="./images/thumb/thumbnail_9.png">
                     </div>
                 </div>
-            </section>
-            <!-- END GALLERY-->
+            </div>
             
             <!-- RSVP-->
             <section id="contact">
@@ -187,5 +101,17 @@
             </div>
             <!-- END FOOTER-->
 
+            <script>
+                $("#slideshow > div:gt(0)").hide();
+                
+                setInterval(function() {
+                    $('#slideshow > div:first')
+                        .fadeOut(1000)
+                        .next()
+                        .fadeIn(1000)
+                        .end()
+                        .appendTo('#slideshow');
+                },      3000);
+            </script>
 		</body>
 </html>
