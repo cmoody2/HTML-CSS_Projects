@@ -1,32 +1,51 @@
+@font-face {
+    font-family: "Monts-bold";
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Monts-light";
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: "DM-serif-reg";
+    src: url('./fonts/DMSerifText-Regular.ttf');
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    src: url('../font_family/Montserrat-Light.ttf');
-    font-size: 1em;
+    font-family: "monts-light", sans-serif;
+    font-size: 1.5em;
 }
 
 .navbar {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    width: 75%;
-    text-decoration: none;
+    position: fixed;
+    top: 3px;
+    left: 50%;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: .3;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index: 1;
+    transform: translate(-50%, 0);
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'monts-bold';
+    font-size: 1vw;
 }
 
 ul, li {
     display: inline;
     list-style-type: none;
     padding: 10px 20px;
+    width: 100%;
 }
 
 
@@ -169,8 +188,7 @@ img.hover-shadow {
 }
 
 header h1 {
-    font-family: 'DM Serif Text', sans-serif;
-    src: url('../font_family/DMSerifText-Regular.ttf');
+    font-family: 'DM-serif-reg', sans-serif;
     font-size: 5em;
 }
 
@@ -198,8 +216,7 @@ header h1 {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    src: url('../font_family/Montserrat-Bold.ttf');
+    font-family: 'Monts-bold';
     font-size: 3vw;
     text-align: center;
 }
@@ -239,7 +256,7 @@ input {
 
 
 #about {
-    background-color: rgba(255, 255, 240, 0.342);
+    background-color: black(255, 255, 240, 0.342);
 }
 
 a:hover {
@@ -247,14 +264,22 @@ a:hover {
 }
 
 .container-background {
-    margin: auto;
-    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     padding: 10px;
 }
 
+.container-background > img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .about-photo-container {
-    margin-right: auto;
-    margin-left: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     overflow: hidden;
     width: 400px;
 }
