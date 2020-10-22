@@ -24,9 +24,10 @@ body {
 
 .navbar {
     position: fixed;
-    top: 3px;
+    top: 9px;
     left: 50%;
     padding: 10px 20px;
+    width: 99%;
     border: 1px solid black;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.822);
@@ -189,7 +190,7 @@ img.hover-shadow {
 
 header h1 {
     font-family: 'DM-serif-reg', sans-serif;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 
@@ -205,7 +206,7 @@ header h1 {
     padding-left: 5%;
     padding-top: 80px;
     padding-bottom: 50px;
-    background-color: #00cccc;
+    background-color: #f3f3f3;
 }
 
 .logo3 {
@@ -219,6 +220,7 @@ h1 {
     font-family: 'Monts-bold';
     font-size: 3vw;
     text-align: center;
+    border-bottom: 5px;
 }
 
 h2 {
@@ -267,7 +269,7 @@ a:hover {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    padding: 10px;
+    padding: 5px;
 }
 
 .container-background > img {
@@ -298,6 +300,8 @@ a:hover {
 
 .container-fluid {
    position: relative;
+   margin-bottom: 0px;
+   top: 50px;
 }
 
 p {
