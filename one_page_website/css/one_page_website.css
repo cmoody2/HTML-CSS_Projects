@@ -42,13 +42,17 @@ a {
     font-size: 1vw;
 }
 
-ul, li {
-    display: inline;
-    list-style-type: none;
-    padding: 10px 20px;
-    width: 100%;
+ul {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
 }
 
+li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px 12px;
+}
 
 * {
     box-sizing: border-box;
@@ -212,7 +216,7 @@ header h1 {
 .logo3 {
     padding-left: 69%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom:50px;
     background-color: black;
 }
 
