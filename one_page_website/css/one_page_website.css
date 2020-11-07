@@ -25,18 +25,16 @@ body {
 .navbar {
     position: fixed;
     display: flex;
-    width: 100%;
+    width: 99.2%;
     top: 8px;
     height: 40px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.822);
+    border-top: 2px solid black;
     z-index: 1;
 }
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgba(10, 0, 0, 0.897);
     font-family: 'monts-bold';
     font-size: 1vw;
 }
@@ -44,6 +42,7 @@ a {
 ul {
     display: inline-flex;
     flex-flow: row nowrap;
+    justify-content: space-around safe;
     width: 100%;
     height: 40px;
     margin: 0px;
@@ -51,10 +50,12 @@ ul {
 }
 
 li {
-    justify-content: center safe;
     flex: 1;
     list-style-type: none;
     text-align: center;
+    border-left: 1.8px solid black;
+    border-right: 1.8px solid black;
+
 }
 
 * {
