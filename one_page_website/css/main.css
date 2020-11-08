@@ -266,7 +266,8 @@ input {
 
 
 #about {
-    background-color: black(255, 255, 240, 0.342);
+    background-color: black;
+    color: white;
 }
 
 a:hover {
@@ -274,13 +275,20 @@ a:hover {
 }
 
 .container-background {
+    position: fixed;
+    display: flex;
+
+    z-index: -10;
+}
+
+.container-background-image {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 5px;
 }
 
-.container-background > img {
+.container-background-image > img {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
