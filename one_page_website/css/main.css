@@ -268,6 +268,7 @@ input {
 #about {
     background-color: black;
     color: white;
+    margin-top: 50%;
 }
 
 a:hover {
