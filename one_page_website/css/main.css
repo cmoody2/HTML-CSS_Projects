@@ -28,7 +28,7 @@ body {
     width: 99.2%;
     top: 8px;
     height: 40px;
-    border-top: 2px solid black;
+    border: 2px solid black;
     z-index: 1;
 }
 
@@ -53,9 +53,6 @@ li {
     flex: 1;
     list-style-type: none;
     text-align: center;
-    border-left: 1.8px solid black;
-    border-right: 1.8px solid black;
-
 }
 
 * {
