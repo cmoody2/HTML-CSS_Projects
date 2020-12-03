@@ -299,7 +299,7 @@ P {
 }
 
 .opening_statement {
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 /*=========================================
@@ -316,7 +316,7 @@ a {
 q {
     font-style: italic;
     font-weight: lighter;
-    font-size: 1.8vw;
+    font-size: 1.4vw;
 }
 
 /*==========================================
@@ -344,7 +344,9 @@ img {
 .pop_up_button {
     bottom: 1.75vw;
     right: 1.75vw;
-    width: 15vw;
+    width: 9vw;
+    height: 1vw;
+    font-size: 1vw;
     background-color: white;
     color: black;
     border: solid;
@@ -446,10 +448,6 @@ img:hover {
     transform: scale(1.1);
 }
 
-.opening_statement:hover {
-    transition: transform 1s ease-in-out;
-    transform: scale(1.01);
-}
 
 /*===============================================
     FOOTER ELEMENTS
