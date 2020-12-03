@@ -280,7 +280,7 @@ body.fade-out {
 h1 {
     text-transform: uppercase;
     font-family: 'RobotoMono', monospace, Arial;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
     margin-top: 3%;
     color: #f8f8f2;
@@ -296,6 +296,14 @@ P {
     font-size: 1vw;
     padding-left: 1vw;
     padding-right: 1vw;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.1vw;
+    padding-left: 1vw;
+    padding-right: 1vw; 
 }
 
 .opening_statement {
@@ -436,6 +444,11 @@ button:hover, .form-container .btn:hover {
 p:hover {
     transition: transfrom 1s ease-in-out;
     transform: scale(1.02);
+}
+
+ul:hover {
+    transition: transfrom 1s ease-in-out;
+    transform: scale(1.02); 
 }
 
 h1:hover {
