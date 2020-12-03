@@ -298,12 +298,15 @@ P {
     padding-right: 1vw;
 }
 
+
+
 li {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.1vw;
+    font-size: 1vw;
     padding-left: 1vw;
-    padding-right: 1vw; 
+    padding-right: 1vw;
+    padding-top: 10px; 
 }
 
 .opening_statement {
